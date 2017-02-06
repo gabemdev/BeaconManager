@@ -3,46 +3,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-html {
-  background: url('<%= image_path("home_background.jpg") %>') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
- .centered_div {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  border-radius: 3px;
-  text-align: center;
-}
-#welcome_text {
-  color: #eee;
-  font-size: 1.2em;
-  font-weight: normal;
-  line-height: 1.6em;
-  margin-top: 2em;
-}
 
-@media only screen and (max-width: 600px) {
-  .centered_div {
-    width: 90% !important;
-    height: 90% !important;
-  }
-  button.sign_in {
-    font-size: 1em !important;
-  }
-  #welcome_text {
-    font-size: 1em !important;
-    line-height: 1.4em !important;
-  }
-}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
