@@ -34,13 +34,23 @@
 </p>
 
 <p>
-  <strong>Alerttitle:</strong>
+  <strong>Alert Title:</strong>
   <%= @beacon.alertTitle %>
 </p>
 
 <p>
-  <strong>Alertmessage:</strong>
+  <strong>Alert Message:</strong>
   <%= @beacon.alertMessage %>
+</p>
+
+<p>
+  <strong>Lagtitude:</strong>
+  <%= @beacon.latitude %>
+</p>
+
+<p>
+  <strong>Longitude</strong>
+  <%= @beacon.longitude %>
 </p>
 
 <%= link_to 'Edit', edit_beacon_path(@beacon), class: "btn btn-primary" %> |

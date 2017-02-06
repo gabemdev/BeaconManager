@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20170206181815) do
     t.integer  "minor"
     t.string   "alertTitle"
     t.string   "alertMessage"
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
