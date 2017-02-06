@@ -1,3 +1,56 @@
-<div id="welcome_text">
+<!-- <div id="welcome_text">
   <h2>Welcome Home</h2>
+</div> -->
+
+<div class="container">
+  <div class="header clearfix">
+    <nav>
+      <ul class="nav nav-pills pull-right">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+      </ul>
+    </nav>
+    <h3 class="text-muted">Beacon Manager API</h3>
+  </div>
+
+  <div class="jumbotron">
+    <h1>Beacon Manager Documentation</h1>
+    <p class="lead">This manager is intended to manage all Dignity Health Beacons. All beacons will include a UUID, major, minor, beacon title and beacon message.</p>
+    <p><a class="btn btn-lg btn-success" href="/beacons" role="button">Add Beacons</a></p>
+  </div>
+
+
+
+  <div class="row marketing">
+    <div class="col-lg-6">
+      <h2>Beacon Message</h2>
+      <p>Each beacon will have an individual beacon alert and beacon message. Messages will be managed individually.</p>
+    </div>
+    <div class="col-lg-6">
+      <h2>Hospitals</h2>
+      <p>While it is intended that each hospital will contain its own array of beacons, this is just a first step towards that. </p>
+    </div>
+  </div>
+
+  <hr>
+  <div class="row marketing">
+
+    <div class="blog-main">
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">API WIKI</h2>
+        <p>BeaconManager will manage all beacons for Dignity Health hospital. Below you will find any available API documentation for this feature.</p>
+        <hr>
+        <h2>List of Beacons</h2>
+        <hr>
+        <pre><code>curl -H "Accept: application/json" -H "Content-type: application/json" \
+     https://agile-stream-10086.herokuapp.com/beacons.json </code></pre>
+     <br>
+        <h3>Response</h3>
+        <p>
+        <pre><code>< HTTP/1.1 200 OK
+[{"id":1,"uuid":"unsdg1245","major":12356,"minor":12345,"alertTitle":"Hello There","alertMessage":"This is a message","created_at":"2017-02-06T21:37:39.625Z","updated_at":"2017-02-06T21:37:39.625Z","url":"http://localhost:3000/beacons/1.json"}]</code></pre>
+      </div><!-- /.blog-post -->
+
+    </div><!-- /.blog-main -->
+
 </div>
