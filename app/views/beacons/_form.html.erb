@@ -11,32 +11,18 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :uuid %>
-    <%= f.text_field :uuid %>
-  </div>
 
-  <div class="field">
-    <%= f.label :major %>
-    <%= f.number_field :major %>
-  </div>
-
-  <div class="field">
-    <%= f.label :minor %>
-    <%= f.number_field :minor %>
-  </div>
-
-  <div class="field">
-    <%= f.label :alertTitle %>
-    <%= f.text_field :alertTitle %>
-  </div>
-
-  <div class="field">
-    <%= f.label :alertMessage %>
-    <%= f.text_field :alertMessage %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div class ="well">
+  <%= f.label :uuid %><br>
+  <%= f.text_field :uuid %><br><br>
+  <%= f.label :major %><br>
+  <%= f.number_field :major %><br><br>
+  <%= f.label :minor %><br>
+  <%= f.number_field :minor %><br><br>
+  <%= f.label :alertTitle %><br>
+  <%= f.text_field :alertTitle %><br><br>
+  <%= f.label :alertMessage %><br>
+  <%= f.text_field :alertMessage %><br><br>
+  <%= f.submit class: "btn btn-primary" %>
 <% end %>
+</div>

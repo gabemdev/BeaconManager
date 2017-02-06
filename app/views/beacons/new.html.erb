@@ -1,5 +1,17 @@
+<% if @beacon.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@beacon.errors.count, "error") %> prohibited this event from being saved:<h2>
+
+      <ul>
+        <% @beacon.errors.full_message.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% end %>
+
 <h1>New Beacon</h1>
 
 <%= render 'form', beacon: @beacon %>
 
-<%= link_to 'Back', beacons_path %>
+<%= link_to 'Back', beacons_path, class: "btn btn-primary" %>
