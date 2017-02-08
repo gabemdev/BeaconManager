@@ -16,6 +16,8 @@
       <th>Alert Message</th>
       <th>Latitude</th>
       <th>Longitude</th>
+      <th>Floor ID</th>
+      <th>Building ID</th>
 
       <!-- <th colspan="3"></th> -->
     </tr>
@@ -31,6 +33,8 @@
         <td><%= beacon.alertMessage %></td>
         <td><%= beacon.latitude %></td>
         <td><%= beacon.longitude %></td>
+        <td><%= beacon.floorID %></td>
+        <td><%= beacon.buildingID %></td>
         <td><%= link_to 'Show', beacon, class: "btn btn-primary" %></td>
         <td><%= link_to 'Edit', edit_beacon_path(beacon), class: "btn btn-default" %></td>
         <td><%= link_to 'Destroy', beacon, method: :delete, class: "btn btn-danger", data: { confirm: 'Are you sure you want to delete?' } %></td>

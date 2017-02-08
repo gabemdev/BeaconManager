@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20170206181815) do
     t.string   "alertMessage"
     t.float    "latitude"
     t.float    "longitude"
+    t.integer  "buildingID"
+    t.integer  "floorID"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end

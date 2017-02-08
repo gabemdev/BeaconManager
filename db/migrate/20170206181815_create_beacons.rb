@@ -8,6 +8,8 @@ class CreateBeacons < ActiveRecord::Migration[5.0]
       t.string :alertMessage
       t.float :latitude
       t.float :longitude
+      t.integer :buildingID
+      t.integer :floorID
 
       t.timestamps
     end

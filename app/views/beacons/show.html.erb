@@ -53,5 +53,15 @@
   <%= @beacon.longitude %>
 </p>
 
+<p>
+  <strong>Building ID</strong>
+  <%= @beacon.buildingID %>
+</p>
+
+<p>
+  <strong>Floor ID</strong>
+  <%= @beacon.floorID %>
+</p>
+
 <%= link_to 'Edit', edit_beacon_path(@beacon), class: "btn btn-primary" %> |
 <%= link_to 'Back', beacons_path, class: "btn btn-primary" %>
