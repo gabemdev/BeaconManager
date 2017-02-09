@@ -19,7 +19,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Uuid:</strong>
+  <strong>UUID:</strong>
   <%= @beacon.uuid %>
 </p>
 
@@ -61,6 +61,11 @@
 <p>
   <strong>Floor ID</strong>
   <%= @beacon.floorID %>
+</p>
+
+<p>
+  <strong>Dwell Beacon</strong>
+  <%= @beacon.dwell_beacon %>
 </p>
 
 <%= link_to 'Edit', edit_beacon_path(@beacon), class: "btn btn-primary" %> |

@@ -10,6 +10,7 @@ class CreateBeacons < ActiveRecord::Migration[5.0]
       t.float :longitude
       t.integer :buildingID
       t.integer :floorID
+      t.boolean :dwell_beacon
 
       t.timestamps
     end

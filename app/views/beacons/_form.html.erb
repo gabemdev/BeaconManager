@@ -19,9 +19,9 @@
   <%= f.number_field :major %><br><br>
   <%= f.label :minor %><br>
   <%= f.number_field :minor %><br><br>
-  <%= f.label :alertTitle %><br>
+  <%= f.label "Alert Title" %><br>
   <%= f.text_field :alertTitle %><br><br>
-  <%= f.label :alertMessage %><br>
+  <%= f.label "Alert Message" %><br>
   <%= f.text_field :alertMessage %><br><br>
   <%= f.label :latitude %><br>
   <%= f.text_field :latitude %><br><br>
@@ -31,6 +31,8 @@
   <%= f.text_field :floorID %><br><br>
   <%= f.label :buildingID %><br>
   <%= f.text_field :buildingID %><br><br>
+  <%= f.label "Dwell Beacon" %><br>
+  <%= f.check_box :dwell_beacon %><br><br>
   <%= f.submit class: "btn btn-primary" %>
 <% end %>
 </div>
