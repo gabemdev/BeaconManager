@@ -18,6 +18,7 @@
       <th>Longitude</th>
       <th>Floor ID</th>
       <th>Building ID</th>
+      <th>POI ID</th>
       <th>Dwell Beacon</th>
 
       <!-- <th colspan="3"></th> -->
@@ -36,6 +37,7 @@
         <td><%= beacon.longitude %></td>
         <td><%= beacon.floorID %></td>
         <td><%= beacon.buildingID %></td>
+        <td><%= beacon.poiID %></td>
         <td><%= beacon.dwell_beacon %></td>
         <td><%= link_to 'Show', beacon, class: "btn btn-primary" %></td>
         <td><%= link_to 'Edit', edit_beacon_path(beacon), class: "btn btn-default" %></td>

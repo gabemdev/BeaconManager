@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20170206181815) do
     t.float    "longitude"
     t.integer  "buildingID"
     t.integer  "floorID"
+    t.integer  "poiID"
     t.boolean  "dwell_beacon"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
