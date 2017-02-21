@@ -11,6 +11,7 @@ class CreateBeacons < ActiveRecord::Migration[5.0]
       t.integer :buildingID
       t.integer :floorID
       t.integer :poiID
+      t.string :poiName
       t.boolean :dwell_beacon
 
       t.timestamps
